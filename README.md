@@ -1,5 +1,7 @@
 # sky-shaders
 
+https://github.com/user-attachments/assets/1a20fd91-bfbd-4bcc-b9e8-994e77c320d2
+
 Drop-in WebGL sky shader components for React. Copies directly into your project so you own the source and can tweak everything.
 
 ## Install
