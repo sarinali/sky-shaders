@@ -1,6 +1,9 @@
 {
-  "name": "sky-shaders",
-  "version": "0.1.0",
+  "name": "@sarinali/sky-shaders",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "version": "0.1.1",
   "description": "Drop-in sky shader components for React. Copy into your project and tweak.",
   "type": "module",
   "bin": {

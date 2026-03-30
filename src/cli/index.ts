@@ -131,13 +131,13 @@ function helpText() {
 sky-shaders — Drop-in sky shader components for React.
 
 Usage:
-  npx sky-shaders add <ComponentName>   Copy a component into your project
-  npx sky-shaders list                  List available components
-  npx sky-shaders help                  Show this help message
+  npx @sarinali/sky-shaders add <ComponentName>   Copy a component into your project
+  npx @sarinali/sky-shaders list                  List available components
+  npx @sarinali/sky-shaders help                  Show this help message
 
 Examples:
-  npx sky-shaders add SkyShader
-  npx sky-shaders list
+  npx @sarinali/sky-shaders add SkyShader
+  npx @sarinali/sky-shaders list
 `.trim();
 }
 
@@ -161,14 +161,14 @@ async function main() {
   if (command === "add") {
     const name = args[1];
     if (!name) {
-      console.error("Please specify a component name: npx sky-shaders add <ComponentName>");
+      console.error("Please specify a component name: npx @sarinali/sky-shaders add <ComponentName>");
       process.exit(1);
     }
     await addCommand(name);
     process.exit(0);
   }
 
-  console.error(`Unknown command: "${command}". Run "npx sky-shaders help" for usage.`);
+  console.error(`Unknown command: "${command}". Run "npx @sarinali/sky-shaders help" for usage.`);
   process.exit(1);
 }
 
