@@ -1,0 +1,10 @@
+{
+  "components": {
+    "SkyShader": {
+      "name": "SkyShader",
+      "description": "A WebGL sky shader with time-of-day controls, volumetric clouds, sun, moon, and stars.",
+      "files": ["SkyShader.tsx"],
+      "dependencies": ["react"]
+    }
+  }
+}

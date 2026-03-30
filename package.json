@@ -1,0 +1,32 @@
+{
+  "name": "sky-shaders",
+  "version": "0.1.0",
+  "description": "Drop-in sky shader components for React. Copy into your project and tweak.",
+  "type": "module",
+  "bin": {
+    "sky-shaders": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "src/registry"
+  ],
+  "keywords": [
+    "react",
+    "shader",
+    "webgl",
+    "sky",
+    "clouds",
+    "component"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
