@@ -59,14 +59,10 @@ function App() {
           <SkyShader
             width={1920}
             height={1080}
-            time={time}
-            density={density}
-            turbulence={turbulence}
-            wind={wind}
-            onTimeChange={handleTimeChange}
-            onDensityChange={handleDensityChange}
-            onTurbulenceChange={handleTurbulenceChange}
-            onWindChange={handleWindChange}
+            time={420}
+            density={35}
+            turbulence={30}
+            wind={20}
             hideControls
           />
         </div>
@@ -193,60 +189,26 @@ function App() {
           </div>
           <div className="features-grid">
             <div className="feature-card">
-              <div className="feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="12" r="5" stroke="currentColor" strokeWidth="1.5"/>
-                  <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                </svg>
-              </div>
               <h3>Time-of-Day Lighting</h3>
               <p>Piecewise color interpolation drives the sky gradient, cloud tinting, and celestial visibility across a full 24-hour cycle.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M3 15c2.483 0 4.345-3 6-3s3.517 3 6 3 4.345-3 6-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                  <path d="M3 9c2.483 0 4.345-3 6-3s3.517 3 6 3 4.345-3 6-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                </svg>
-              </div>
               <h3>Three Cloud Layers</h3>
               <p>High cirrus wisps, mid-level cumulus masses with domain warping, and low stratus sheets composite back-to-front.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 3v1M12 20v1M4.22 4.22l.7.7M18.36 18.36l.7.7M1 12h1M20 12h3M4.22 19.78l.7-.7M18.36 5.64l.7-.7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                  <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.5"/>
-                </svg>
-              </div>
               <h3>Physical Lighting</h3>
               <p>Beer-Lambert absorption, powder effect, and subsurface scattering approximations give clouds realistic depth and glow.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
               <h3>Stars and Moon</h3>
               <p>Twinkling stars with color temperature variation and a crescent moon that fades correctly behind cloud cover at night.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="1.5"/>
-                  <path d="M9 3v18M3 9h18" stroke="currentColor" strokeWidth="1.5"/>
-                </svg>
-              </div>
               <h3>FBM Noise</h3>
               <p>Fractal Brownian Motion with rotation matrices breaks grid alignment. Configurable octaves and gain shape each cloud layer.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
               <h3>Real-Time GPU</h3>
               <p>Everything runs in a single fragment shader pass on the GPU. No textures, no geometry -- pure procedural math at 60fps.</p>
             </div>
